@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.MultipartRequest;
 import uz.pdp.warehouse.entity.Attachment;
 import uz.pdp.warehouse.entity.AttachmentContent;
@@ -31,8 +32,8 @@ public class AttachmentController {
     @Autowired
     AttachmentContentRepo attachmentContentRepo;
 
-    @PostMapping(value = "/upload")
-    public String uploadFile(MultipartRequest request) throws IOException {
+    @PostMapping("/upload")
+    public String uploadFile(MultipartHttpServletRequest request) throws IOException {
         Iterator<String> fileNames = request.getFileNames();
         MultipartFile file = request.getFile(fileNames.next());
         if(file!=null){
