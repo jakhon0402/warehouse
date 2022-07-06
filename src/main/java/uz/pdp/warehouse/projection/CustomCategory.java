@@ -11,5 +11,5 @@ public interface CustomCategory {
 
     Category getCategory();
 
-    String getActive();
+    boolean isActive();
 }

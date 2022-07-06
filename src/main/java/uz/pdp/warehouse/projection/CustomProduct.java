@@ -20,6 +20,6 @@ public interface CustomProduct {
 
     Measurement getMeasurement();
 
-    String getActive();
+    boolean idActive();
 
 }

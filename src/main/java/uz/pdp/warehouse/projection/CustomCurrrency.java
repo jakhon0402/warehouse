@@ -9,6 +9,6 @@ public interface CustomCurrrency {
 
     String getName();
 
-    String getActive();
+    boolean isActive();
 
 }

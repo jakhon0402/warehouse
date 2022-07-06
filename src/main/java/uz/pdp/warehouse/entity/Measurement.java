@@ -19,6 +19,6 @@ public class Measurement {
     private String name;
 
     @Column(nullable = false)
-    private String active;
+    private boolean active;
 
 }

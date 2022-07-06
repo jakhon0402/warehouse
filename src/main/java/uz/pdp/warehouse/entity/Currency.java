@@ -19,5 +19,5 @@ public class Currency {
     private String name;
 
     @Column(nullable = false)
-    private String active;
+    private boolean active;
 }

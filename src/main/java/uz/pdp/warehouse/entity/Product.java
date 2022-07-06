@@ -32,5 +32,5 @@ public class Product {
     private Measurement measurement;
 
     @Column(nullable = false)
-    private String active;
+    private boolean active;
 }

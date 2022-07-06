@@ -22,6 +22,6 @@ public class Category {
     private Category category;
 
     @Column(nullable = false)
-    private String active;
+    private boolean active;
 
 }

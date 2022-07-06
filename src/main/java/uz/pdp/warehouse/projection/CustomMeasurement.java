@@ -9,5 +9,5 @@ public interface CustomMeasurement {
 
     String getName();
 
-    String getActive();
+    boolean isActive();
 }
